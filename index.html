@@ -444,3 +444,16 @@ updateLabels();
 </script>
 </body>
 </html>
+<script>
+// スワイプで戻る（追記）
+let _tsx = 0, _tsy = 0;
+document.addEventListener('touchstart', e => { _tsx = e.touches[0].clientX; _tsy = e.touches[0].clientY; }, { passive: true });
+document.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - _tsx;
+  const dy = Math.abs(e.changedTouches[0].clientY - _tsy);
+  if (dx > 60 && dy < 80) {
+    if (document.getElementById('overlay').classList.contains('show')) { closePopup(); return; }
+    if (currentFlow || currentMenu) showTop();
+  }
+}, { passive: true });
+</script>
