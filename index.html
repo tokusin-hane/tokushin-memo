@@ -327,9 +327,13 @@ function renderFlow() {
       html += `<div class="step-show-hint">${L('show_screen')}</div></div>`;
     }
     if (step.options) {
-      html += `<div class="step-options">`;
-      step.options.forEach(opt => {
-        html += `<div class="step-opt" onclick="showPopup(${JSON.stringify(opt.ja)}, ${JSON.stringify(opt)})">`;
+      const optId = 'opts_' + Date.now() + '_' + Math.random().toString(36).slice(2);
+      window._optData = window._optData || {};
+      html += `<div class="step-options" id="${optId}">`;
+      step.options.forEach((opt, oi) => {
+        const key = optId + '_' + oi;
+        window._optData[key] = opt;
+        html += `<div class="step-opt" onclick="var o=window._optData['${key}'];showPopup(o.ja,o)">`;
         html += `<div class="opt-jp">${opt.ja}</div>`;
         if (lang !== 'ja') html += `<div class="opt-tr">${g(opt)}</div>`;
         html += `</div>`;
