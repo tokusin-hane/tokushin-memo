@@ -203,6 +203,25 @@ const DATA = {
         ]},
       ]
     },
+      {
+      id: "religion", cat: "religion", icon: "\u{1F371}",
+      title: { ja: "\u98DF\u4e8b\u30FB\u5b97\u6559\u306e\u914d\u616e", vi: "Ch\u1ebf \u0111\u1ed9 \u0103n u\u1ed1ng", id: "Diet / Agama", en: "Diet / Religion", bn: "\u0996\u09be\u09a6\u09cd\u09af / \u09a7\u09b0\u09cd\u09ae" },
+      sections: [
+        { label: { ja: "\u98df\u3079\u3089\u308c\u306a\u3044\u3082\u306e\u3092\u4f1d\u3048\u308b", vi: "N\u00f3i v\u1ec1 th\u1ee9 kh\u00f4ng \u0103n \u0111\u01b0\u1ee3c", id: "Makanan yang tidak bisa dimakan", en: "Tell them what you cannot eat", bn: "\u0995\u09c0 \u0996\u09c7\u09a4\u09c7 \u09aa\u09be\u09b0\u09c7\u09a8 \u09a8\u09be" }, items: [
+          { jp: "\u8c5a\u8089\u306f\u98df\u3079\u3089\u308c\u307e\u305b\u3093", tr: { vi: "T\u00f4i kh\u00f4ng \u0103n \u0111\u01b0\u1ee3c th\u1ecbt l\u1ee3n", id: "Saya tidak bisa makan daging babi", en: "I cannot eat pork", bn: "\u0986\u09ae\u09bf \u09b6\u09c1\u09df\u09cb\u09b0\u09c7\u09b0 \u09ae\u09be\u0982\u09b8 \u0996\u09be\u0987 \u09a8\u09be" }, color: "amber" },
+          { jp: "\u30a2\u30eb\u30b3\u30fc\u30eb\u306f\u98f2\u3081\u307e\u305b\u3093", tr: { vi: "T\u00f4i kh\u00f4ng u\u1ed1ng r\u01b0\u1ee3u", id: "Saya tidak minum alkohol", en: "I cannot drink alcohol", bn: "\u0986\u09ae\u09bf \u09ae\u09a6 \u09aa\u09be\u09a8 \u0995\u09b0\u09bf \u09a8\u09be" }, color: "amber" },
+          { jp: "\u30cf\u30e9\u30fc\u30eb\u98df\u3092\u5e0c\u671b\u3057\u307e\u3059", tr: { vi: "T\u00f4i c\u1ea7n th\u1ee9c \u0103n Halal", id: "Saya perlu makanan Halal", en: "I need Halal food", bn: "\u0986\u09ae\u09be\u09b0 \u09b9\u09be\u09b2\u09be\u09b2 \u0996\u09be\u09ac\u09be\u09b0 \u09a6\u09b0\u0995\u09be\u09b0" }, color: "amber" },
+          { jp: "\u725b\u8089\u306f\u98df\u3079\u3089\u308c\u307e\u305b\u3093", tr: { vi: "T\u00f4i kh\u00f4ng \u0103n \u0111\u01b0\u1ee3c th\u1ecbt b\u00f2", id: "Saya tidak bisa makan daging sapi", en: "I cannot eat beef", bn: "\u0986\u09ae\u09bf \u0997\u09b0\u09c1\u09b0 \u09ae\u09be\u0982\u09b8 \u0996\u09be\u0987 \u09a8\u09be" }, color: "amber" },
+          { jp: "\u8089\u985e\u306f\u98df\u3079\u307e\u305b\u3093", tr: { vi: "T\u00f4i kh\u00f4ng \u0103n th\u1ecbt", id: "Saya tidak makan daging", en: "I don't eat meat", bn: "\u0986\u09ae\u09bf \u09ae\u09be\u0982\u09b8 \u0996\u09be\u0987 \u09a8\u09be" }, color: "green" },
+          { jp: "\u30a2\u30ec\u30eb\u30ae\u30fc\u304c\u3042\u308a\u307e\u3059", tr: { vi: "T\u00f4i b\u1ecb d\u1ecb \u1ee9ng", id: "Saya punya alergi", en: "I have allergies", bn: "\u0986\u09ae\u09be\u09b0 \u0985\u09cd\u09af\u09be\u09b2\u09be\u09b0\u09cd\u099c\u09bf \u0986\u099b\u09c7" }, color: "red" },
+        ]},
+        { label: { ja: "\u793c\u62dd\u306b\u3064\u3044\u3066", vi: "V\u1ec1 vi\u1ec7c c\u1ea7u nguy\u1ec7n", id: "Tentang sholat", en: "About prayer", bn: "\u09a8\u09be\u09ae\u09be\u099c \u09b8\u09ae\u09cd\u09aa\u09b0\u09cd\u0995\u09c7" }, items: [
+          { jp: "\u304a\u795c\u308a\u306e\u6642\u9593\u304c\u5fc5\u8981\u3067\u3059", tr: { vi: "T\u00f4i c\u1ea7n th\u1eddi gian c\u1ea7u nguy\u1ec7n", id: "Saya perlu waktu sholat", en: "I need time to pray", bn: "\u0986\u09ae\u09be\u09b0 \u09a8\u09be\u09ae\u09be\u099c\u09c7\u09b0 \u09b8\u09ae\u09df \u09a6\u09b0\u0995\u09be\u09b0" }, color: "green" },
+          { jp: "\u304a\u795c\u308a\u3067\u304d\u308b\u5834\u6240\u3092\u6559\u3048\u3066\u304f\u3060\u3055\u3044", tr: { vi: "H\u00e3y ch\u1ec9 cho t\u00f4i n\u01a1i c\u00f3 th\u1ec3 c\u1ea7u nguy\u1ec7n", id: "Tolong tunjukkan tempat sholat", en: "Please show me a place to pray", bn: "\u09a8\u09be\u09ae\u09be\u099c \u09aa\u09dc\u09be\u09b0 \u099c\u09be\u09df\u0997\u09be \u09a6\u09c7\u0996\u09be\u09a8" }, color: "green" },
+          { jp: "\u65ad\u98df\u4e2d\u3067\u3059\uff08\u30e9\u30de\u30c0\u30f3\uff09", tr: { vi: "T\u00f4i \u0111ang nh\u1ecbn \u0103n (Ramadan)", id: "Saya sedang puasa (Ramadan)", en: "I am fasting (Ramadan)", bn: "\u0986\u09ae\u09bf \u09b0\u09cb\u099c\u09be \u09b0\u09be\u0996\u099b\u09bf (\u09b0\u09ae\u099c\u09be\u09a8)" }, color: "amber" },
+        ]},
+      ]
+    },
   ],
 
   // ========== 現場メモ ==========

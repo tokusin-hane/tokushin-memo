@@ -227,6 +227,10 @@ footer { text-align: center; padding: 20px 16px 32px; font-size: 11px; color: #a
           <div class="menu-icon">⚙️</div>
           <div class="menu-btn-label" id="ml-custom">会社ルール</div>
         </button>
+        <button class="menu-btn" onclick="showMenu('religion')">
+          <div class="menu-icon">🍱</div>
+          <div class="menu-btn-label" id="ml-religion">食事・宗教</div>
+        </button>
         <button class="menu-btn" onclick="showMenu('all')">
           <div class="menu-icon">📂</div>
           <div class="menu-btn-label" id="ml-all">すべて</div>
@@ -272,6 +276,8 @@ const LABELS = {
   ml_life: { ja: '生活', vi: 'Cuộc sống', id: 'Kehidupan', en: 'Daily life', bn: 'দৈনন্দিন জীবন' },
   ml_rules: { ja: 'ルール', vi: 'Quy tắc', id: 'Aturan', en: 'Rules', bn: 'নিয়ম' },
   ml_custom: { ja: '会社ルール', vi: 'Nội quy công ty', id: 'Aturan perusahaan', en: 'Company rules', bn: 'কোম্পানির নিয়ম' },
+  ml_religion: { ja: '食事・宗教', vi: 'Ăn uống / Tôn giáo', id: 'Makan / Agama', en: 'Diet / Religion', bn: 'খাদ্য / ধর্ম' },
+  ml_religion: { ja: '食事・宗教', vi: 'Ăn uống / Tôn giáo', id: 'Makan / Agama', en: 'Diet / Religion', bn: 'খাদ্য / ধর্ম' },
   ml_all: { ja: 'すべて', vi: 'Tất cả', id: 'Semua', en: 'All', bn: 'সব' },
   back: { ja: '‹ 戻る', vi: '‹ Quay lại', id: '‹ Kembali', en: '‹ Back', bn: '‹ ফিরে যান' },
   show_screen: { ja: '← 画面を見せてください', vi: '← Cho xem màn hình này', id: '← Tunjukkan layar ini', en: '← Show this screen', bn: '← এই স্ক্রিন দেখান' },
