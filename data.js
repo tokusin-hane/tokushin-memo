@@ -208,84 +208,14 @@ const DATA = {
   // ========== 現場メモ ==========
   genba: [
     {
-      id: "safety", cat: "genba", icon: "🔴",
-      title: { ja: "安全・緊急", vi: "An toàn / Khẩn cấp", id: "Keselamatan / Darurat", en: "Safety / Emergency", bn: "নিরাপত্তা / জরুরি" },
+      id: "basic", cat: "genba", icon: "🏭",
+      title: { ja: "現場で使うフレーズ", vi: "Cụm từ tại hiện trường", id: "Frasa di lapangan", en: "Field phrases", bn: "কাজের মাঠে বাক্য" },
       items: [
-        { ja: "危険", vi: "Nguy hiểm", id: "Bahaya", en: "Danger", bn: "বিপদ", kana: "きけん" },
-        { ja: "緊急停止", vi: "Dừng khẩn cấp", id: "Henti darurat", en: "Emergency stop", bn: "জরুরি থামুন", kana: "きんきゅうていし" },
-        { ja: "止まってください", vi: "Hãy dừng lại", id: "Tolong berhenti", en: "Please stop", bn: "থামুন দয়া করে", kana: "とまってください" },
-        { ja: "逃げてください", vi: "Hãy chạy trốn", id: "Tolong kabur", en: "Please evacuate", bn: "পালান দয়া করে", kana: "にげてください" },
-        { ja: "助けてください", vi: "Xin hãy giúp tôi", id: "Tolong saya", en: "Please help me", bn: "সাহায্য করুন", kana: "たすけてください" },
-        { ja: "火事", vi: "Cháy", id: "Kebakaran", en: "Fire", bn: "আগুন", kana: "かじ" },
-        { ja: "怪我をしました", vi: "Tôi bị thương", id: "Saya terluka", en: "I am injured", bn: "আহত হয়েছি", kana: "けがをしました" },
-      ]
-    },
-    {
-      id: "instruction", cat: "genba", icon: "🟡",
-      title: { ja: "作業指示", vi: "Chỉ thị công việc", id: "Instruksi kerja", en: "Work instructions", bn: "কাজের নির্দেশ" },
-      items: [
-        { ja: "始めてください", vi: "Hãy bắt đầu", id: "Tolong mulai", en: "Please start", bn: "শুরু করুন", kana: "はじめてください" },
-        { ja: "止めてください", vi: "Hãy dừng lại", id: "Tolong berhenti", en: "Please stop", bn: "থামুন", kana: "とめてください" },
-        { ja: "急いでください", vi: "Hãy nhanh lên", id: "Tolong cepat", en: "Please hurry", bn: "তাড়াতাড়ি করুন", kana: "いそいでください" },
-        { ja: "確認してください", vi: "Hãy kiểm tra", id: "Tolong periksa", en: "Please check", bn: "চেক করুন", kana: "かくにんしてください" },
-        { ja: "もう一度やってください", vi: "Hãy làm lại một lần nữa", id: "Tolong lakukan sekali lagi", en: "Please do it again", bn: "আবার করুন", kana: "もういちどやってください" },
-        { ja: "手伝ってください", vi: "Hãy giúp tôi", id: "Tolong bantu", en: "Please help me", bn: "সাহায্য করুন", kana: "てつだってください" },
-        { ja: "休憩してください", vi: "Hãy nghỉ ngơi", id: "Tolong istirahat", en: "Please take a break", bn: "বিশ্রাম নিন", kana: "きゅうけいしてください" },
+        { ja: "わかりません", vi: "Tôi không hiểu", id: "Saya tidak mengerti", en: "I don't understand", bn: "বুঝি না", kana: "わかりません" },
+        { ja: "もう一度お願いします", vi: "Xin hãy làm lại một lần nữa", id: "Tolong lakukan sekali lagi", en: "Please do it again", bn: "আবার করুন দয়া করে", kana: "もういちどおねがいします" },
         { ja: "終わりました", vi: "Đã xong", id: "Sudah selesai", en: "I'm done", bn: "শেষ হয়েছে", kana: "おわりました" },
-        { ja: "わかりました", vi: "Tôi hiểu rồi", id: "Saya mengerti", en: "I understand", bn: "বুঝেছি", kana: "わかりました" },
-        { ja: "わかりません", vi: "Tôi không hiểu", id: "Saya tidak mengerti", en: "I don't understand", bn: "বুঝি নি", kana: "わかりません" },
-      ]
-    },
-    {
-      id: "quality", cat: "genba", icon: "🟢",
-      title: { ja: "品質・検査", vi: "Chất lượng / Kiểm tra", id: "Kualitas / Inspeksi", en: "Quality / Inspection", bn: "মান/পরিদর্শন" },
-      items: [
-        { ja: "不良", vi: "Lỗi", id: "Cacat", en: "Defect", bn: "ত্রুটি", kana: "ふりょう" },
-        { ja: "不良品", vi: "Hàng lỗi", id: "Barang cacat", en: "Defective product", bn: "ত্রুটিপূর্ণ পণ্য", kana: "ふりょうひん" },
-        { ja: "良品", vi: "Hàng tốt", id: "Barang bagus", en: "Good product", bn: "ভালো পণ্য", kana: "りょうひん" },
-        { ja: "検査", vi: "Kiểm tra", id: "Inspeksi", en: "Inspection", bn: "পরিদর্শন", kana: "けんさ" },
-        { ja: "合格", vi: "Đạt", id: "Lulus", en: "Pass", bn: "পাস", kana: "ごうかく" },
-        { ja: "不合格", vi: "Không đạt", id: "Tidak lulus", en: "Fail", bn: "ফেল", kana: "ふごうかく" },
-        { ja: "キズ", vi: "Vết xước", id: "Goresan", en: "Scratch", bn: "আঁচড়", kana: "きず" },
-        { ja: "汚れ", vi: "Vết bẩn", id: "Noda", en: "Dirt/stain", bn: "ময়লা", kana: "よごれ" },
-        { ja: "サイズが違います", vi: "Kích thước sai", id: "Ukuran salah", en: "Wrong size", bn: "সাইজ ভুল", kana: "サイズがちがいます" },
-        { ja: "問題ありません", vi: "Không có vấn đề", id: "Tidak ada masalah", en: "No problem", bn: "কোনো সমস্যা নেই", kana: "もんだいありません" },
-      ]
-    },
-    {
-      id: "quantity", cat: "genba", icon: "📏",
-      title: { ja: "数量・時間", vi: "Số lượng / Thời gian", id: "Jumlah / Waktu", en: "Quantity / Time", bn: "পরিমাণ/সময়" },
-      items: [
-        { ja: "個", vi: "cái", id: "buah", en: "piece(s)", bn: "টি", kana: "こ" },
-        { ja: "本", vi: "cái (dài)", id: "batang", en: "stick(s)", bn: "টি", kana: "ほん" },
-        { ja: "枚", vi: "tờ", id: "lembar", en: "sheet(s)", bn: "টুকরা", kana: "まい" },
-        { ja: "箱", vi: "hộp", id: "kotak", en: "box(es)", bn: "বাক্স", kana: "はこ" },
-        { ja: "残り○個あります", vi: "Còn lại ○ cái", id: "Tersisa ○ buah", en: "○ remaining", bn: "○টি বাকি আছে", kana: "のこり○こあります" },
-        { ja: "○時に終わります", vi: "Kết thúc lúc ○ giờ", id: "Selesai jam ○", en: "Finish at ○ o'clock", bn: "○টায় শেষ হবে", kana: "○じにおわります" },
-        { ja: "遅れています", vi: "Đang chậm", id: "Sedang terlambat", en: "Running late", bn: "দেরি হচ্ছে", kana: "おくれています" },
-        { ja: "予定通りです", vi: "Đúng kế hoạch", id: "Sesuai rencana", en: "On schedule", bn: "পরিকল্পনা অনুযায়ী", kana: "よていどおりです" },
-      ]
-    },
-    {
-      id: "machine", cat: "genba", icon: "⚙️",
-      title: { ja: "設備・機械", vi: "Thiết bị / Máy móc", id: "Peralatan / Mesin", en: "Equipment / Machine", bn: "যন্ত্রপাতি" },
-      items: [
-        { ja: "機械が止まりました", vi: "Máy đã dừng", id: "Mesin berhenti", en: "Machine stopped", bn: "মেশিন বন্ধ হয়ে গেছে", kana: "きかいがとまりました" },
-        { ja: "機械が動きません", vi: "Máy không chạy", id: "Mesin tidak berjalan", en: "Machine won't work", bn: "মেশিন কাজ করছে না", kana: "きかいがうごきません" },
-        { ja: "音がおかしいです", vi: "Âm thanh lạ", id: "Bunyi aneh", en: "Strange noise", bn: "অদ্ভুত শব্দ হচ্ছে", kana: "おとがおかしいです" },
-        { ja: "修理してください", vi: "Hãy sửa chữa", id: "Tolong perbaiki", en: "Please fix it", bn: "মেরামত করুন", kana: "しゅうりしてください" },
-        { ja: "電源を切ってください", vi: "Hãy tắt nguồn điện", id: "Tolong matikan daya", en: "Please turn off power", bn: "বিদ্যুৎ বন্ধ করুন", kana: "でんげんをきってください" },
-        { ja: "ボタンを押してください", vi: "Hãy nhấn nút", id: "Tolong tekan tombol", en: "Please press the button", bn: "বাটন চাপুন", kana: "ボタンをおしてください" },
-      ]
-    },
-    {
-      id: "5s", cat: "genba", icon: "✨",
-      title: { ja: "5S・整理整頓", vi: "5S / Sắp xếp gọn gàng", id: "5S / Kerapian", en: "5S / Organization", bn: "5S/গোছানো" },
-      items: [
-        { ja: "整理してください", vi: "Hãy sắp xếp", id: "Tolong rapikan", en: "Please organize", bn: "গুছিয়ে রাখুন", kana: "せいりしてください" },
-        { ja: "掃除してください", vi: "Hãy dọn dẹp", id: "Tolong bersihkan", en: "Please clean up", bn: "পরিষ্কার করুন", kana: "そうじしてください" },
-        { ja: "元の場所に戻してください", vi: "Hãy đặt lại chỗ cũ", id: "Tolong kembalikan ke tempat semula", en: "Please put it back", bn: "আগের জায়গায় রাখুন", kana: "もとのばしょにもどしてください" },
-        { ja: "ゴミを捨ててください", vi: "Hãy vứt rác", id: "Tolong buang sampah", en: "Please throw away garbage", bn: "ময়লা ফেলুন", kana: "ゴミをすててください" },
+        { ja: "危ないです", vi: "Nguy hiểm", id: "Berbahaya", en: "It's dangerous", bn: "বিপজ্জনক", kana: "あぶないです" },
+        { ja: "不良です", vi: "Hàng lỗi", id: "Ini cacat", en: "This is defective", bn: "এটা ত্রুটিপূর্ণ", kana: "ふりょうです" },
       ]
     },
   ],
