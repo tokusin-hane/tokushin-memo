@@ -362,8 +362,11 @@ function renderGenba() {
     html += `<div class="block-title">${g(section.title)}</div>`;
     html += `<span class="block-arrow">›</span></div>`;
     html += `<div class="block-body"><div class="genba-items">`;
-    section.items.forEach(item => {
-      html += `<div class="genba-item" onclick="showPopup(${JSON.stringify(item.ja)}, ${JSON.stringify(item)})">`;
+    section.items.forEach((item, gi) => {
+      const gkey = 'gb_' + Date.now() + '_' + Math.random().toString(36).slice(2) + '_' + gi;
+      window._optData = window._optData || {};
+      window._optData[gkey] = item;
+      html += `<div class="genba-item" onclick="var o=window._optData['${gkey}'];showPopup(o.ja,o)">`;
       html += `<div><div class="genba-jp">${item.ja}</div><div class="genba-kana">${item.kana||''}</div></div>`;
       html += `<div class="genba-tr">${g(item)}</div>`;
       html += `</div>`;
@@ -396,8 +399,11 @@ function renderMenu(cat) {
       html += `<div class="sub-label">${g(sec.label)}</div>`;
       const wide = sec.items.length <= 2;
       html += `<div class="btn-grid${wide ? ' wide' : ''}">`;
-      sec.items.forEach(item => {
-        html += `<button class="phrase-btn ${item.color||''}" onclick="showPopup(${JSON.stringify(item.jp)}, ${JSON.stringify(item.tr)})">`;
+      sec.items.forEach((item, ii) => {
+        const key = 'pb_' + Date.now() + '_' + Math.random().toString(36).slice(2) + '_' + ii;
+        window._optData = window._optData || {};
+        window._optData[key] = {jp: item.jp, tr: item.tr};
+        html += `<button class="phrase-btn ${item.color||''}" onclick="var o=window._optData['${key}'];showPopup(o.jp,o.tr)">`;
         html += `<div class="btn-jp">${item.jp}</div>`;
         if (lang !== 'ja') html += `<div class="btn-tr">${item.tr[lang]||''}</div>`;
         html += `</button>`;
