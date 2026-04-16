@@ -441,11 +441,7 @@ document.querySelectorAll('.lb').forEach(b => {
 
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
 updateLabels();
-</script>
-</body>
-</html>
-<script>
-// スワイプで戻る（追記）
+// スワイプで戻る
 let _tsx = 0, _tsy = 0;
 document.addEventListener('touchstart', e => { _tsx = e.touches[0].clientX; _tsy = e.touches[0].clientY; }, { passive: true });
 document.addEventListener('touchend', e => {
@@ -457,3 +453,5 @@ document.addEventListener('touchend', e => {
   }
 }, { passive: true });
 </script>
+</body>
+</html>
